@@ -2,16 +2,16 @@
 //Written by Fady Anwar
 
 var overevent = new MouseEvent("mouseover", {
-                                                        "view": window,
-                                                        "bubbles": true,
-                                                        "cancelable": true
-                                        });
+	"view": window,
+	"bubbles": true,
+	"cancelable": true
+});
 
 var outevent = new MouseEvent("mouseout", {
-                                                        "view": window,
-                                                        "bubbles": true,
-                                                        "cancelable": true
-                                        });
+	"view": window,
+	"bubbles": true,
+	"cancelable": true
+});
 
 function fakeHovers(){
 	let elements = document.getElementsByTagName("div");

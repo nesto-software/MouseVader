@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+web-ext build -s "${SCRIPT_DIR}/src" -a "${SCRIPT_DIR}/out"

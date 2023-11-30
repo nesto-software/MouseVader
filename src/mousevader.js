@@ -1,6 +1,3 @@
-//DarthVader is a privacy tool intended to confuse trackers by creating noise in the collected data
-//Written by Fady Anwar
-
 var overevent = new MouseEvent("mouseover", {
 	"view": window,
 	"bubbles": true,
@@ -14,13 +11,24 @@ var outevent = new MouseEvent("mouseout", {
 });
 
 function fakeHovers(){
-	let elements = document.getElementsByTagName("div");
+	let elements = document.getElementsByTagName("h3");
 	let counter = 0;
+
 	//iteraring elements bottm up to hit more recent ones first, i.e. for virtual doms of bottomless timelines
 	for(var i = elements.length-1; i >  0; i--){
-		if(Math.random() > 0.95){
-			elements[i].dispatchEvent(overevent);
-			elements[i].dispatchEvent(outevent);
+		if(Math.random() > 0.20){
+			let element = elements[i];
+			if (!element) {
+				continue;
+			}
+			
+			try {
+				element.dispatchEvent(overevent);
+				element.dispatchEvent(outevent);
+			} catch(e) {
+				// note: DOM might change for some reason and element might become invalid
+			}
+
 			counter += 2;
 
 			//capping hovers

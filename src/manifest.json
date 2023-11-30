@@ -1,15 +1,13 @@
 {
 
   "manifest_version": 2,
-  "name": "MouseVader-Nesto",
+  "name": "MouseVaderV2",
   "version": "2.0",
-
   "description": "A tool that misleads DD dashboard inactivity detection",
-
-  "icons": {
-	  "860": "darth.png"
+  "developer": {
+    "name": "Martin Löper",
+    "url": "https://github.com/nesto-software/MouseVaderV2"
   },
-
   "content_scripts": [
     {
       "matches": ["https://p.datadoghq.eu/*"],

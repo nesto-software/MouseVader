@@ -1,4 +1,4 @@
-# MouseVader-Nesto
+# MouseVader for DD-Dashboards
 
 THIS IS A NESTO-CUSTOMIZED FORK: We rewrote the extension to only work for DataDog dashboards. We want to prevent them to refresh the page on inactivity.
 

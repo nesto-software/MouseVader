@@ -14,3 +14,4 @@ The purpose of this extension is to subvert and circumvent this tracking tactic 
 ## Publish
 
 The output can be published using a valid Mozilla account via: https://addons.mozilla.org/en-US/developers/addon/submit/upload-listed
+The current public listing lives under: https://addons.mozilla.org/en-US/developers/addon/mousevaderv2

@@ -6,7 +6,11 @@ Many companies including Facebook and Google do track their users behavior on th
 
 The purpose of this extension is to subvert and circumvent this tracking tactic by creating fake random mouse events while you are staying on any web page to simulate actual user behavior but in a totally random way. So your actual behavioral data would be diluted purposefully with random and irrelevant data which, with time, would make it pretty difficult for tracking services to build a profile of you.
 
-# Scripts
+## Scripts
 
 - `./scripts/nesto-build`
 - `./scripts/nesto-test`: You must create .env with the dashboard url to test before running it
+
+## Publish
+
+The output can be published using a valid Mozilla account via: https://addons.mozilla.org/en-US/developers/addon/submit/upload-listed

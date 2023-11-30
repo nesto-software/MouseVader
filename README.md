@@ -6,6 +6,7 @@ The purpose of this extension is to subvert and circumvent this tracking tactic 
 
 To install this extension on Firefox visit https://addons.mozilla.org/en-US/firefox/addon/mousevader
 
-# How to build
+# Scripts
 
-`web-ext build`
+- `./scripts/nesto-build`
+- `./scripts/nesto-test`: You must create .env with the dashboard url to test before running it

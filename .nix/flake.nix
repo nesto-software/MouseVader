@@ -35,17 +35,10 @@
 
           SHELL = "${pkgs.zsh}/bin/zsh";
 
-          shellHook =
-            let
-              dashboard-id = "1b39ygq1gylo1xe2-9529a9d0ca12589d180de6e265502bcf";
-              dashboard-theme = "dark";
-            in
-            ''
-              export SHELL="${pkgs.zsh}/bin/zsh"
-              export NESTO_NIX_DEVSHELL=1;
-
-              export NESTO_DASHBOARD_URL="https://p.datadoghq.eu/sb/${dashboard-id}?refresh_mode=sliding&theme=${dashboard-theme}&tpl_var_env%5B0%5D=production&tpl_var_nesto_env%5B0%5D=production&live=true";
-            '';
+          shellHook = ''
+            export SHELL="${pkgs.zsh}/bin/zsh"
+            export NESTO_NIX_DEVSHELL=1;
+          '';
         };
       }
     );
